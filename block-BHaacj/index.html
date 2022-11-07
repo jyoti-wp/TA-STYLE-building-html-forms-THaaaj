@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/b4e2b9c29d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@1,100&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@1,100&display=swap"
+        rel="stylesheet">
+    <title>Assignment II - Building HTML Forms</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container flex">
+            <div class="image logo">
+                <img src="assets/logo.png" alt="Logo" width="100" height="100">
+                <span>Journey</span>
+            </div>
+            <nav class="navigation">
+                <a href="" class="active">Home</a>
+                <a href="">Top Destination</a>
+                <a href="">Recommended Places</a>
+                <a href="">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+    <div class="hero bg-image">
+        <div class="container">
+            <div class="hero-head">
+                <h2 class="hero-heading">
+                    lets's begin
+                </h2>
+            </div>
+            <div class="hero-section-circle flex">
+                <div class="hero-circle one"></div>
+                <div class="hero-circle two"></div>
+                <div class="hero-circle three"></div>
+            </div>
+            <div class="hero-head">
+                <h3 class="hero-head">We assist you to choose the best</h3>
+                <span class="drop-down">
+                    <a href=""><i class="fa-solid fa-angle-down"></i></a>
+                </span>
+            </div>
+            <form action="" class="form form-label">
+                <fieldset class="flex">
+                    <div class="col-1-2">
+                        <div class="controls">
+                            <legend>Choose your detination</legend>
+                            <input type="text" id="destination" class="destination" name="destination"
+                                value="Type your destination...">
+                        </div>
+                        <div class="controls flex">
+                            <div class="date">
+                                <legend>Checkin Date</legend>
+                                <input type="text" id="checkin" class="checkin" name="checkin" value="Check In" />
+                            </div>
+                            <div class="date">
+                                <legend>Checkout date</legend>
+                                <input type="text" id="checkout" class="checkout" name="checkout" value="Check Out" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="avability">
+                        <div class="col-1-2 col-2-2 flex">
+                            <div class="controls">
+                                <legend>How many rooms?</legend>
+                                <select class="floatLabel">
+                                    <option value="blank"></option>
+                                    <option value="1" selected>1 Room</option>
+                                    <option value="2">2 Room</option>
+                                    <option value="3">3 Room</option>
+                                    <option value="3">4 Room</option>
+                                    <option value="3">5 Room</option>
+                                    <option value="3">6 Room</option>
+                                    <option value="3">7 Room</option>
+                                </select>
+                                <i class="fa fa-sort"></i>
+                            </div>
+                            <div class="controls">
+                                <legend>
+                                    Adults
+                                </legend>
+                                <select class="floatLabel">
+                                    <option value="blank"></option>
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="2">4</option>
+                                    <option value="3">5</option>
+                                    <option value="2">6</option>
+                                    <option value="3">7</option>
+                                    <option value="2">8</option>
+                                    <option value="3">9</option>
+                                </select>
+                                <i class="fa fa-sort"></i>
+                            </div>
+                            <div class="controls">
+                                <legend>
+                                    Children
+                                </legend>
+                                <select class="floatLabel">
+                                    <option value="blank"></option>
+                                    <option value="3" selected>0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="3">4</option>
+                                    <option value="3">5</option>
+                                    <option value="3">6</option>
+                                    <option value="3">7</option>
+                                    <option value="3">8</option>
+                                    <option value="3">9</option>
+                                </select>
+                                <i class="fa fa-sort"></i>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <button>Check Avability</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <section class="journey">
+        <div class="container-second">
+            <h2 class="journey-heading">
+                Your <span style="font: weight 700x;">Journey</span> is our priority
+            </h2>
+            <p class="journey-para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, quibusdam quisquam. Alias consequatur
+                explicabo voluptatum tenetur eum voluptatibus rem recusandae consequuntur eaque, aliquid, impedit
+            </p>
+            <button class="btn-main">
+                continue explore
+            </button>
+        </div>
+    </section>
+    <main>
+        <div class="card-section">
+            <div class="cont">
+                <div class="card-main card-one flex">
+                    <div class="card-image">
+                        <img src="assets/tm-img-01.jpg" alt="" width="" height="">
+                        <div class="arrow">
+                            <span>
+                                <a href=""><i class="fa-solid fa-circle-chevron-right"></i></a>
+                            </span>
+                            <span>
+                                <a href=""><i class="fa-solid fa-circle-chevron-right"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card card-position">
+                        <h3 class="card-heading">
+                            Europe's most visited places
+                        </h3>
+                        <p class="card-para">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem repellat nam, deserunt
+                            sapiente,
+                            sed quod, tempore assumenda expedita quas minus dolorum hic numquam mollitia eveniet! Neque
+                            est
+                            quibusdam iusto odio?
+                        </p>
+                        <button class="btn-card">
+                            continue reading
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-section">
+            <div class="cont">
+                <div class="card-main card-two flex">
+                    <div class="card card-position">
+                        <h3 class="card-heading">
+                            Asia's most popular places
+                        </h3>
+                        <p class="card-para">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem repellat nam, deserunt
+                            sapiente,
+                            sed quod, tempore assumenda expedita quas minus dolorum hic numquam mollitia eveniet! Neque
+                            est
+                            quibusdam iusto odio?
+                        </p>
+                        <button class="btn-card">
+                            continue reading
+                        </button>
+                    </div>
+                    <div class="card-image">
+                        <img src="assets/tm-img-02.jpg" alt="" width="" height="">
+                        <div class="arrow">
+                            <span>
+                                <a href=""><i class="fa-solid fa-circle-chevron-right"></i></a>
+                            </span>
+                            <span>
+                                <a href=""><i class="fa-solid fa-circle-chevron-right"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-section">
+            <div class="cont">
+                <div class="card-main card-three flex">
+                    <div class="card-image">
+                        <img src="assets/tm-img-03.jpg" alt="" width="" height="">
+                        <div class="arrow">
+                            <span>
+                                <a href=""><i class="fa-solid fa-circle-chevron-right"></i></a>
+                            </span>
+                            <span>
+                                <a href=""><i class="fa-solid fa-circle-chevron-right"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card card-position">
+                        <h3 class="card-heading">
+                            America's most famous places
+                        </h3>
+                        <p class="card-para">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem repellat nam, deserunt
+                            sapiente,
+                            sed quod, tempore assumenda expedita quas minus dolorum hic numquam mollitia eveniet! Neque
+                            est
+                            quibusdam iusto odio?
+                        </p>
+                        <button class="btn-card">
+                            continue reading
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section>
+        <div class="map-section">
+            <div class="map-image-section flex">
+                <div class="map-image-box">
+                    <img src="assets/north-america.png" alt="">
+                    <h4 class="map-name">
+                        North America
+                    </h4>
+                </div>
+                <div class="map-image-box">
+                    <img src="assets/south-america.png" alt="">
+                    <h4 class="map-name">
+                        South America
+                    </h4>
+                </div>
+                <div class="map-image-box">
+                    <img src="assets/europe.png" alt="">
+                    <h4 class="map-name">
+                        Europe
+                    </h4>
+                </div>
+                <div class="map-image-box box-color" style="background-color: #C66995">
+                    <img src="assets/asia.png" alt="">
+                    <h4 class="map-name">
+                        Asia
+                    </h4>
+                </div>
+                <div class="map-image-box">
+                    <img src="assets/africa.png" alt="">
+                    <h4 class="map-name">
+                        africa
+                    </h4>
+                </div>
+                <div class="map-image-box">
+                    <img src="assets/australia.png" alt="">
+                    <h4 class="map-name">
+                        australia
+                    </h4>
+                </div>
+                <div class="map-image-box">
+                    <img src="assets/antartica.png" alt="">
+                    <h4 class="map-name">
+                        antartica
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hotel-list">
+        <div class="container">
+            <div class="hotel-card flex">
+                <div class="map-image">
+                    <img src="assets/tm-img-04.jpg" alt="">
+                </div>
+                <d class="map-head">
+                    <h4 class="hotel-heading">
+                        Asia Resort Hotel
+                    </h4>
+                    <h5 class="country-name">
+                        Singapore
+                    </h5>
+                    <p class="dummy-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sunt tenetur, consequatur,
+                        reiciendis magni quas sequi, veritatis fuga incidunt aliquid pariatur eius exercitationem
+                    </p>
+                </d>
+                <div class="price-section">
+                    <h2 class="price">$440</h2>
+                    <button class="btn-price">
+                        <span>Contine reading</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hotel-card flex">
+                <div class="map-image">
+                    <img src="assets/tm-img-05.jpg" alt="">
+                </div>
+                <d class="map-head">
+                    <h4 class="hotel-heading">
+                        Mullam eget est a nils
+                    </h4>
+                    <h5 class="country-name">
+                        Yangon, Myanmar
+                    </h5>
+                    <p class="dummy-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sunt tenetur, consequatur,
+                        reiciendis magni quas sequi, veritatis fuga incidunt aliquid pariatur eius exercitationem
+                    </p>
+                </d>
+                <div class="price-section">
+                    <h2 class="price">$440</h2>
+                    <button class="btn-price">
+                        <span>Continue Reading</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hotel-card flex">
+                <div class="map-image">
+                    <img src="assets/tm-img-06.jpg" alt="">
+                </div>
+                <d class="map-head">
+                    <h4 class="hotel-heading">
+                        Proin interdum ullamcorper
+                    </h4>
+                    <h5 class="country-name">
+                        Bangkok, Thiland
+                    </h5>
+                    <p class="dummy-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sunt tenetur, consequatur,
+                        reiciendis magni quas sequi, veritatis fuga incidunt aliquid pariatur eius exercitationem
+                    </p>
+                </d>
+                <div class="price-section">
+                    <h2 class="price">$440</h2>
+                    <button class="btn-price">
+                        <span>Continue Reading</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hotel-card flex">
+                <div class="map-image">
+                    <img src="assets/tm-img-07.jpg" alt="">
+                </div>
+                <d class="map-head">
+                    <h4 class="hotel-heading">
+                        Lorem, ipsum dolor sit
+                    </h4>
+                    <h5 class="country-name">
+                        Vientiane, Los
+                    </h5>
+                    <p class="dummy-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sunt tenetur, consequatur,
+                        reiciendis magni quas sequi, veritatis fuga incidunt aliquid pariatur eius exercitationem
+                    </p>
+                </d>
+                <div class="price-section">
+                    <h2 class="price">$440</h2>
+                    <button class="btn-price">
+                        <span>Continue Reading</span>
+                    </button>
+                </div>
+            </div>
+            <div class="btn-hotel-list">
+                <button class="btn-main">
+                    Show more places
+                </button>
+            </div>
+        </div>
+    </section>
+    <div class="map-frame">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1670052.8593919964!2d73.07025457910774!3d36.24672908387703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e1092499ffa89d%3A0x6567a6d4697e7f1!2sJammu%20and%20Kashmir!5e0!3m2!1sen!2sin!4v1667720396983!5m2!1sen!2sin"
+            width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="map-form">
+            <form action="" class="mform">
+                <div class="mform">
+                    <input type="text" name="mname" id="mname" value="Name">
+                    <input type="text" name="name" id="memail" value="Email">
+                </div>
+                <div>
+                    <input type="text" name="msubject" id="msubject" value="Subject">
+                </div>
+                <div>
+                    <input type="text" name="mmessage" id="mmessage" value="Message" height="200">
+                </div>
+            </form>
+            <div class="m-button">
+                <button>Send Message Now</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="footer-para">
+            Copyright &#169; 2020 Your company. designed by Template Mo
+        </p>
+    </footer>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- - Create a page according to the layout shown below.
+
+![Building HTML forms Assignment level 2](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/building-html-forms/ex-2.png)
+
+- Using CSS resets is necessary.
+
+- Use semantic tags and keep the nesting and indentation proper. -->
