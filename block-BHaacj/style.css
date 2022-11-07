@@ -1,0 +1,675 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-family: sans-serif;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Nanum Gothic',
+        sans-serif;
+    font-family: 'Open Sans',
+        sans-serif;
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+// My reset
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+input,
+button,
+textarea,
+button,
+input:focus,
+button:focus,
+textarea:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+button {
+    border: 0;
+    background: none;
+}
+
+input::placeholder {
+    letter-spacing: 0.04em;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+b {
+    font-weight: bold;
+}
+
+i {
+    font-style: italic;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+img {
+    object-fit: cover;
+}
+
+/* Custom style  */
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0px 35px;
+}
+
+.container-second {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0px 35px;
+}
+
+.header {
+    margin: 15px 0px;
+}
+
+.navigation a {
+    padding: 10px;
+    background-color: white;
+    color: #272727;
+    border-radius: 50%;
+    margin: 8px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.active:hover {
+    color: #69C6BA;
+}
+
+.header .flex {
+    justify-content: space-around;
+}
+
+.logo img {
+    vertical-align: middle;
+    object-fit: contain;
+}
+
+.logo span {
+    font-size: 54px;
+    font-weight: 600;
+    vertical-align: middle;
+    margin-left: 10px
+}
+
+.hero {
+    background: url(assets/banner.jpg),
+        rgb(7, 4, 0.5);
+    background-size: cover;
+    height: 800px;
+}
+
+/* Hero section css 
+ */
+
+.hero {}
+
+.hero-heading {
+    font-size: 44px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.hero-circle {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    margin: 5px 0px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.hero-section-circle {
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.one,
+.three {
+    width: 10px;
+    height: 10px;
+}
+
+.drop-down {
+    display: flex;
+    justify-content: center;
+}
+
+.drop-down i {
+    font-size: 25px;
+    background-color: #69C6BA;
+    padding: 15px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.hero-head {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+    line-height: 1.7;
+    text-transform: inherit;
+}
+
+/* Form section  */
+
+form {
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+.form-label {
+    background-color: #fff;
+    padding: 25px;
+    margin-top: 80px;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+input {
+    border: none;
+    padding: 15px 30px;
+    font-size: 15px;
+    color: gray;
+}
+
+.date {
+    margin-right: 30px;
+}
+
+.avability {
+    width: 50%;
+}
+
+/* .col-2-2 .controls {
+    margin-right: 10px;
+} */
+
+.floatLabel {
+    border: none;
+    color: gray;
+    font-size: 15px;
+    appearance: none;
+    padding: 15px 35px 10px 0px;
+}
+
+.btn {
+    text-align: center;
+    background-color: #69C6BA;
+    margin-top: 50px;
+    padding: 18px;
+}
+
+.btn button {
+    color: #fff;
+    font-size: 18px;
+}
+
+/* journey section  */
+
+.journey {
+    background-color: #EFEFEF;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.journey-heading {
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 100;
+    line-height: 1.7;
+}
+
+.journey-para {
+    text-align: center;
+    font-size: 16px;
+    color: gray;
+    line-height: 1.3;
+    margin: 10px 0px;
+}
+
+.btn-main {
+    border: 0;
+    background: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #69C6BA;
+    padding: 15px;
+    margin: 30px 0px;
+}
+
+
+/* Card section  */
+
+.card-section {
+    line-height: 0;
+}
+
+.card-main {
+    position: relative;
+}
+
+.card-image {
+    width: 50%;
+}
+
+.card-image img {
+    width: 100%;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    left: 41%;
+}
+
+.arrow a {
+    background: rgba(60, 57, 55, 0.6);
+    padding: 15px;
+}
+
+.arrow i {
+    color: lightgray;
+}
+
+.card {
+    background-color: #69C6BA;
+    padding: 35px;
+    width: 40%;
+}
+
+.card-position {
+    position: absolute;
+    top: 30%;
+    right: 7%;
+}
+
+.card-two {
+    flex-direction: row-reverse;
+}
+
+.card-two .card-position {
+    position: absolute;
+    top: 30%;
+    left: 7%;
+}
+
+.card-two .card {
+    background-color: #C66995;
+}
+
+.card-two .btn-card {
+    color: #C66995;
+}
+
+.card-two .arrow {
+    left: 52.1%;
+}
+
+.card-heading {
+    font-size: 24px;
+    color: #fff;
+    text-transform: inherit;
+    line-height: 1.7;
+}
+
+.card-para {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1.3;
+}
+
+.btn-card {
+    border: 0;
+    background: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #69C6BA;
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 20px
+}
+
+/* Map section  */
+.map-image-section {
+    background-color: #69C6BA;
+}
+
+.map-image-box {
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 11.5%;
+}
+
+.map-name {
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 100;
+    line-height: 1.7;
+}
+
+/* hotel list section  */
+
+.hotel-list {
+    margin: 80px;
+}
+
+.hotel-list .flex {
+    justify-content: flex-start;
+}
+
+.hotel-card {
+    border: 1px solid #EFEFEF;
+    margin: 20px 0px;
+}
+
+.map-image img {
+    vertical-align: middle;
+}
+
+.map-head {
+    padding: 0px 35px;
+}
+
+.hotel-heading {
+    font-size: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.7;
+}
+
+.country-name {
+    font-size: 14px;
+    color: #CA739D;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.dummy-text {
+    color: #A2A1A1;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 1.3;
+    margin-top: 20px;
+}
+
+.price-section {
+    background-image: radial-gradient(circle at -61px 90px, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 110px, 0px, #69C6BA, #69C6BA);
+    padding: 51px;
+    text-align: center;
+}
+
+.price {
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+}
+
+.btn-price {
+    margin-top: 40px;
+    white-space: nowrap;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.btn-hotel-list {
+    text-align: center;
+}
+
+
+/* map section  */
+
+.map-frame {
+    line-height: 0;
+    position: relative
+}
+
+/* iframe {
+    background: rgb(94, 97, 100, 0.5);
+} */
+
+.map-form {
+    padding: 20px;
+    background-color: #fff;
+    position: absolute;
+    right: 50px;
+    top: 40px;
+}
+
+.map-form input {
+    background-color: #F5F5F5;
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+    color: gray;
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+#mname {
+    margin-right: 10px;
+}
+
+#msubject,
+#mmessage {
+    width: 94%;
+}
+
+#mmessage {
+    padding-bottom: 100px;
+}
+
+.m-button {
+    background-color: #69C6BA;
+    text-align: center;
+    padding: 15px;
+}
+
+.m-button button {
+    color: #fff;
+    font-size: 16px;
+}
+
+/* .map-form {
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+} */
+
+/* Footer 
+ */
+
+footer {
+    background-color: #69C6BA;
+    padding: 30px 0px;
+}
+
+.footer-para {
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 1.3;
+    font-size: 14px;
+    font-weight: 100;
+}
